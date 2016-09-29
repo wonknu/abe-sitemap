@@ -32,3 +32,7 @@ Optional config:
 - folders (to split sitemap into multiple files)
 	- regex (the regex to extract folder)
 	- sitemapName (name with "$1" to replace with folder name for example)
+
+# Route to generate sitemap manually
+
+go to /abe/plugin/abe-sitemap/generate

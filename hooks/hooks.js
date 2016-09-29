@@ -2,7 +2,7 @@
 
 var hooks = {
   afterSave: function(obj, abe) {
-  	if (obj.type === "publish") {
+  	if (!obj.publishAll && obj.type === "publish") {
 	    abe.abeProcess('sitemap');
   	}
     return obj
