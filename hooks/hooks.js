@@ -3,7 +3,7 @@
 var hooks = {
   afterSave: function(obj, abe) {
   	if (!obj.publishAll && obj.type === "publish") {
-	    abe.abeProcess('sitemap');
+	    abe.abeExtend.process('sitemap');
   	}
     return obj
   }
