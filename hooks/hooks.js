@@ -3,7 +3,9 @@
 var hooks = {
   afterSave: function(obj, abe) {
   	if (!obj.publishAll && obj.type === "publish") {
-	    abe.abeExtend.process('sitemap');
+	    if (!abe.abeExtend.process('sitemap')) {
+	    	console.log('cannot run process sitemap, because an other one is already running')
+	    }
   	}
     return obj
   }
