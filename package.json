@@ -1,0 +1,25 @@
+{
+  "name": "abe-sitemap",
+  "version": "1.0.0",
+  "description": "generate a sitemap for your site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdFabConnect/abe-sitemap.git"
+  },
+  "keywords": [
+    "abe",
+    "cms",
+    "plugin",
+    "sitemap"
+  ],
+  "author": "Nicolas Labbé",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdFabConnect/abe-sitemap/issues"
+  },
+  "homepage": "https://github.com/AdFabConnect/abe-sitemap#readme"
+}
