@@ -45,12 +45,12 @@ function createXml(list, domain, priorities) {
 	return xml
 }
 
-if(typeof pConfig.ABEJS_PATH === 'undefined' || pConfig.ABEJS_PATH === null) {
-  pConfig.ABEJS_PATH = ''
+if(typeof pConfig.ABECMS_PATH === 'undefined' || pConfig.ABECMS_PATH === null) {
+  pConfig.ABECMS_PATH = ''
 }
 
 if(typeof pConfig.ABE_WEBSITE !== 'undefined' && pConfig.ABE_WEBSITE !== null) {
-	var cli = path.join(pConfig.ABEJS_PATH, 'cli')
+	var cli = path.join(pConfig.ABECMS_PATH, 'cli')
 
   var abe = require(cli)
   if(pConfig.ABE_WEBSITE) abe.config.set({root: pConfig.ABE_WEBSITE.replace(/\/$/, '') + '/'})
