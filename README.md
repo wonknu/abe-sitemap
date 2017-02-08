@@ -9,15 +9,15 @@ abe install abecms/abe-sitemap
 # config
 
 ```json
-	"sitemap": {
+ "sitemap": {
   	"domain": "http://localhost:8000/",
   	"sitemapName": "index_sitemap.xml",
   	"priorities": {
-  		"article": "0.5"
+  	  "article": "0.5"
   	},
   	"folders": {
-  		"regex": "^\/([a-zA-z-]*?)\/",
-  		"sitemapName": "directory-sitemap-$1.xml"
+  	  "regex": "^\/([a-zA-z-]*?)\/",
+  	  "sitemapName": "directory-sitemap-$1.xml"
   	}
   }
 ```
