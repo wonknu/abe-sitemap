@@ -3,7 +3,7 @@
 > plugin to generate sitemap.xml
 
 ```shell
-abe add https://github.com/AdFabConnect/abe-sitemap.git
+abe install abecms/abe-sitemap
 ```
 
 # config
