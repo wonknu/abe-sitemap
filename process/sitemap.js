@@ -120,7 +120,7 @@ if(typeof pConfig.ABE_WEBSITE !== 'undefined' && pConfig.ABE_WEBSITE !== null) {
 				}
 			}
 
-			process.send('finished');
+			process.send(JSON.stringify({message: 'finished'}));
 			process.exit(0)
 		})
 }
