@@ -50,7 +50,7 @@ if(typeof pConfig.ABECMS_PATH === 'undefined' || pConfig.ABECMS_PATH === null) {
 }
 
 if(typeof pConfig.ABE_WEBSITE !== 'undefined' && pConfig.ABE_WEBSITE !== null) {
-	var cli = path.join(pConfig.ABECMS_PATH, 'cli')
+	var cli = cli = path.join(__dirname, '../../', 'abe-cli', 'dist', 'cli')
 
   var abe = require(cli)
   if(pConfig.ABE_WEBSITE) abe.config.set({root: pConfig.ABE_WEBSITE.replace(/\/$/, '') + '/'})
